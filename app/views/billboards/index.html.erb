@@ -1,0 +1,10 @@
+<h1>Click a Billboard to View Content</h1>
+
+<%= link_to 'Create a new Billboard', new_billboard_path %>
+<ul>
+  <% @billboards.each do |billboard|%>
+    <li>
+      <%= link_to billboard.title, billboard %>
+    </li>
+  <% end %>
+</ul>
