@@ -1,10 +1,9 @@
-<h1><%= @billboard.name %> - <%= @artist.name %></h1>
-<p><%= @topic. %></p>
+<h1><%= @billboard.title %> - <%= @artist.name %></h1>
 <br />
 <%= link_to 'View Songs', artist_songs_path(@artist) %>
 <br />
-<%= link_to 'Edit Topic', edit_billboard_artist_path([@billboard, @aritst]) %>
+<%= link_to 'Edit Artist', edit_billboard_artist_path([@billboard, @aritst]) %>
 <br />
-<%= link_to 'Delete Topic', [@billboard, @artist], method: :delete %>
+<%= link_to 'Delete Artist', [@billboard, @artist], method: :delete %>
 <br />
-<%= link_to 'Back To Topics', billboard_artists_path(@billboard) %>
+<%= link_to 'Back To Artists', billboard_artists_path(@billboard) %>
